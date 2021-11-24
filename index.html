@@ -552,13 +552,13 @@
         <label>Vrijeme dostave: <input type="time" id="delivery_time" name="delivery_time" required></label><br>    
         <label>Jelo: <input list="food-recommendation" type="text"></label><br>
         <datalist id="food-recommendation">
-            <option value="Classic hamburger">Pljeskavica, salata, sve živo</option>
-            <option>Wrap</option>
-            <option>Ćevapi</option>
-            <option>Pizza</option>
-            <option>Zagrebački odrezak</option>
-            <option>Palenta</option>
-            <option>Još 100 stvari</option>
+            <option value="Hamburger">Hamburger</option>
+            <option value="Wrap">Wrap</option>
+            <option value="Ćevapi">Ćevapi</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Zagrebački odrezak">Zagrebački odrezak</option>
+            <option value="Palenta">Palenta</option>
+            <option value="Još 100 stvari">Još 100 stvari</option>
         </datalist>
         <label>Izbor priloga: </label>
         <label><input type="checkbox" name="order_extras" value="kecap"> Kečap</label>
@@ -570,7 +570,7 @@
         <label><input type="radio" name="contactless_delivery" value="true" required> DA</label>
         <label><input type="radio" name="contactless_delivery" value="false" required> NE</label><br>
         <label>Komentar:</label><br>
-        <textarea id="comment" name="comment" maxlength="250" placeholder="250 znakova max"></textarea><br>
+        <textarea id="comment" name="comment" maxlength="250" rows="5" cols="50" placeholder="250 znakova max"></textarea><br>
         <button type="submit">Submit order</button>
     </form>
     <br><a href = "#">back to top</a>
