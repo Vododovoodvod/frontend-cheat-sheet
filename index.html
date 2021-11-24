@@ -547,7 +547,7 @@
     <h3 id="food-o">Food order form</h3>
     <form action="">
         <label>Ime i prezime: <input type="text" id="full_name" name="full_name" required></label><br>
-        <label>Broj telefona: <input type="tel" id="phone" name="phone" required></label><br>
+        <label>Broj telefona: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label><br>
         <label>Adresa kupca: <input type="text" id="address" name="address" required></label><br>
         <label>Vrijeme dostave: <input type="time" id="delivery_time" name="delivery_time" required></label><br>    
         <label>Jelo: <input list="food-recommendation" type="text"></label><br>
