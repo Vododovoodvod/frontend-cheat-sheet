@@ -9,593 +9,581 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
-        <style>
-            html{
-                font-size: 17px;
-                font-family: 'Ubuntu Mono', monospace;
-                background-color: #6E8894;
-            }
-            body {
-                color:#19323C;
-                background-color:#f3f7f0;
-                width: 1000px;
-                margin: 0 auto;
-                padding: 0 20px 20px 20px;
-                border: 6px solid #511C29;
-            }
-            h1{color:#511C29;}
-            h2{color:#511C29;}
-            h3{color:#511C29;}
-            a{color:#CF5C36;}
-            li{color:#568259;}
-        </style>
+        <link href="style.css" rel="stylesheet" />
+        <link href="prism.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>My FE cheat sheet, dude!</h1>
-        <p>Hello everyone, I'm Vododovoodvod. This shall be my Front-End cheatsheet. Visit my <a href="https://github.com/Vododovoodvod" target="_blank">GitHub profile.</a> <br>Get in touch, <a href="mailto:tomislav.stasina@gmail.com">send me email</a>, or <a href = "tel:+123456789">call me maybe</a></p>
-        <h2>HTML</h2>
-        <ol>
-            <li><a href="#doc-struct">Document structure</a></li>
+        <main class=wrapper>
+            <h1>My FE cheat sheet, dude!</h1>
+            <p>Hello everyone, I'm Vododovoodvod. This shall be my Front-End cheatsheet. Visit my <a href="https://github.com/Vododovoodvod" target="_blank">GitHub profile.</a> <br>Get in touch, <a href="mailto:tomislav.stasina@gmail.com">send me email</a>, or <a href = "tel:+123456789">call me maybe</a></p>
+            <h2>HTML</h2>
             <ol>
-                <li><a href="#d-type-sub">DOCTYPE</a></li>
-                <li><a href="#html-sub">HTML</a></li>
-                <li><a href="#head-sub">head</a></li>
-                <li><a href="#body-sub">body</a></li>
+                <li><a href="#doc-struct">Document structure</a></li>
+                <ol>
+                    <li><a href="#d-type-sub">DOCTYPE</a></li>
+                    <li><a href="#html-sub">HTML</a></li>
+                    <li><a href="#head-sub">head</a></li>
+                    <li><a href="#body-sub">body</a></li>
+                </ol>
+                <li><a href="#head-section">Head</a></li>
+                <li><a href="#body-section">Body</a></li>
+                <li><a href="#sem-el">Semantics elements</a></li>
+                <li><a href="#list-el">Lists</a></li>
+                <li><a href="#list-task-el">List task</a></li>
+                <li><a href="#svg-el">SVG</a></li>
+                <li><a href="#can-el">Canvas</a></li>
+                <li><a href="#zadatak-el">Task Pictures + SVG</a></li>
+                <li><a href="#audio-el">Audio</a></li>
+                <li><a href="#video-section">Video</a></li>
+                <li><a href="#link-el">Links</a></li>
+                <li><a href="#table-el">Tables</a></li>
+                <li><a href="#table-task">Table task</a></li>
+                <li><a href="#table-homework">Table homework</a></li>
+                <li><a href="#table-ex">Table exercise</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#form-p">Form practise</a></li>
+                <li><a href="#login-f">Login form</a></li>
+                <li><a href="#age-f">Age gate form</a></li>
+                <li><a href="#sur-f">Survey form</a></li>
+                <li><a href="#new-f">Newsletter form</a></li>
+                <li><a href="#food-o">Food order form</a></li>
             </ol>
-            <li><a href="#head-section">Head</a></li>
-            <li><a href="#body-section">Body</a></li>
-            <li><a href="#sem-el">Semantics elements</a></li>
-            <li><a href="#list-el">Lists</a></li>
-            <li><a href="#list-task-el">List task</a></li>
-            <li><a href="#svg-el">SVG</a></li>
-            <li><a href="#can-el">Canvas</a></li>
-            <li><a href="#zadatak-el">Task Pictures + SVG</a></li>
-            <li><a href="#audio-el">Audio</a></li>
-            <li><a href="#video-section">Video</a></li>
-            <li><a href="#link-el">Links</a></li>
-            <li><a href="#table-el">Tables</a></li>
-            <li><a href="#table-task">Table task</a></li>
-            <li><a href="#table-homework">Table homework</a></li>
-            <li><a href="#table-ex">Table exercise</a></li>
-            <li><a href="#forms">Forms</a></li>
-            <li><a href="#form-p">Form practise</a></li>
-            <li><a href="#login-f">Login form</a></li>
-            <li><a href="#age-f">Age gate form</a></li>
-            <li><a href="#sur-f">Survey form</a></li>
-            <li><a href="#new-f">Newsletter form</a></li>
-            <li><a href="#food-o">Food order form</a></li>
-        </ol>
-        <a href="new.html">Link to new HTML</a>
-        
-        <h2 id="doc-struct">Document structure</h2>
-        <!--A comment-->
-        <h3 id="d-type-sub">DOCTYPE</h3>
-        <p>Here we have: &lt;!DOCTYPE html&gt;: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.</p>
-        <h3 id="html-sub">HTML</h3>
-        <p>&lt;html&gt;&lt;/html&gt;: The &lt;html&gt; element. This element wraps all the content on the page. It is sometimes known as the root element.</p>
-        <h3 id="head-sub">head</h3>
-        <p>&lt;head&gt;&lt;/head&gt;: The &lt;head&gt; element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You'll learn more about this in the next article of the series.</p>
-        <h3 id="body-sub">body</h3>
-        <p>&lt;body&gt;&lt;/body&gt;: The &lt;body&gt; element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.<br><a href = "#">back to top</a><p>
-        <p>
-            <h3 id="head-section">&lt;head&gt; - And shoulders. And title.</h3>
-            <span style="color:blue">&lt;title&gt;</span> - String that creates bookmark in human head.<br>
-            <span style="color:blue">&lt;meta charset="utf-8"&gt;</span> - I can display all sorts of cool $h|T 😊<br>
-            <span style="color:blue">&lt;meta name="author" content="Vododovoodvod"&gt;</span> - So, Vododovoodvod guy did this?<br>
-            <span style="color:blue">&lt;meta name="description" content="My frontend cheat sheet"&gt;</span> - I really don't have better idea<br>
-            <span style="color:blue">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span> - And this page is mobile friendly :D<br>
-            <a href = "#">back to top</a>
-        </p>
-        <p>
-            <h3 id="body-section">&lt;body&gt; - Well, all other stuff goes to me, therefore the belly.</h3>
-            <span style="color:blue">&lt;p&gt;</span> and <span style="color:blue">&lt;/p&gt;</span> - I'm the main guy, the paragraph.<br>
-            <span style="color:blue">&lt;div&gt;</span> - I group content and go to new line!<br>
-            <span style="color:blue">&lt;span&gt;</span> - I group content and don't care about stupid new line!<br>
-            <span style="color:blue">&lt;h1&gt;</span> and <span style="color:blue">&lt;/h1&gt;</span> - I am the greatest of headlines! After me you also have h2, h3, but those guys are bellow my grace.<br>
-            <span style="color:blue">&lt;h2&gt;</span> and <span style="color:blue">&lt;/h2&gt;</span> - You get the point.<br>
-            <span style="color:blue">&lt;br&gt;</span> - I go to new line. Me and <span style="color:blue">&lt;div&gt;</span> are buddys.
-        </p>
-        <p>
-            Aaaaand, if you'd like to display some characters used in HTML code, you can do it with entities:<br>
-            <span style="color:blue">&#38lt&#59</span> - less then<br>
-            <span style="color:blue">&#38gt&#59</span> - greather then<br>
-            How I displayed entities? Check my HTML!<br><a href = "#">back to top</a> 
-        </p>
-        <p>
-            <h3 id="sem-el">Semantics elements</h3>
-            It's not important how I look like, CSS takes care about that. Semantics are all that matters in HTML<br>
-            <strong>&lt;strong&gt; - pointed out, important</strong><br>
-            <em>&lt;em&gt; - pointed out, not really important, good to know</em><br>
-            <small>&lt;small&gt; - not important, nice to have</small>
-            <br><a href = "#">back to top</a> 
-        </p>
-        <p>
-            <h3 id="list-el">Lists</h3>
-            <p>Lists can format list of item in one of 3 ways:</p>
-            Unordered List<br>
-            &lt;ul&gt;<br>&lt;li&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;/li&gt;<br> &lt;/ul&gt;
-            <ul>
-                <li>abc</li>
-                <li>abc</li>
-                <li>abc</li>
-            </ul>
-            Ordered List<br>
-            &lt;ol&gt;<br>&lt;li&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;/li&gt;<br> &lt;/ol&gt;
-            <ol>
-                <li>abc</li>
-                <li>abc</li>
-                <li>abc</li>
-            </ol>
-            Description List<br>
-            &lt;dl&gt;<br>&lt;dt&gt;&lt;/dt&gt;<br>&lt;dd&gt;&lt;/dd&gt;<br> &lt;/dl&gt;
-            <dl>
-                <dt>Something</dt>
-                <dd>Definition of something</dd>
-                <dt>Something else</dt>
-                <dd>Definition of something else</dd>  
-            </dl>
-            <br><a href = "#">back to top</a> 
-        </p>
-        <p>
-            <h3 id="list-task-el">Lists task</h3>
-            <ul>
-                <li>Current HTML version is HTML5</li>
-                <li>HTML is designed by the British scientist Sir Tim Berners-Lee</li>
-            </ul>
-            <ol>
-                <li>head</li>
-                <li>body</li>
-            </ol>
-            <dl>
-                <dt>HTML</dt>
-                <dd>hypertext markup language</dd>
-                <dt>Metadata</dt>
-                <dd>data about data</dd>
-            </dl>
-            <br><a href = "#">back to top</a> 
-        </p>
-        <!--04.11.2021.-->
-        <p>
-            <h3 id="can-el">Canvas</h3>
-            Canvas for drawing via JavaScript.
-            You have greather control over content than SVG.<br><a href = "#">back to top</a> 
-            <h3 id="zadatak-el">Task pictures + SVG</h3>
-            <p>Displays images!<br>&lt;img src="./images/moja-animacija.gif" alt="Pisanje koda" height="100"&gt;</p> 
-            <img src="./images/moja-animacija.gif" alt="Pisanje koda" height="100">
-            <h3 id="svg-el">SVG</h3>
-            <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="50%" height="50%" fill="red"></rect>
-            </svg>
-            <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="90" y="110" width="20" height="90" fill="brown"></rect>
-                <circle cx="100" cy="100" r="50" fill="green"></circle>
-                <circle cx="85" cy="85" r="10" fill="red"></circle>
-                <circle cx="115" cy="100" r="10" fill="red"></circle>
-                <circle cx="80" cy="120" r="10" fill="red"></circle>            
-            </svg>
+            <a href="new.html">Link to new HTML</a>
+            
+            <h2 id="doc-struct">Document structure</h2>
+            <!--A comment-->
+            <h3 id="d-type-sub">DOCTYPE</h3>
+            <p>Here we have: &lt;!DOCTYPE html&gt;: The doctype. When HTML was young (1991-1992), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML.</p>
+            <h3 id="html-sub">HTML</h3>
+            <p>&lt;html&gt;&lt;/html&gt;: The &lt;html&gt; element. This element wraps all the content on the page. It is sometimes known as the root element.</p>
+            <h3 id="head-sub">head</h3>
+            <p>&lt;head&gt;&lt;/head&gt;: The &lt;head&gt; element. This element acts as a container for everything you want to include on the HTML page, that isn't the content the page will show to viewers. This includes keywords and a page description that would appear in search results, CSS to style content, character set declarations, and more. You'll learn more about this in the next article of the series.</p>
+            <h3 id="body-sub">body</h3>
+            <p>&lt;body&gt;&lt;/body&gt;: The &lt;body&gt; element. This contains all the content that displays on the page, including text, images, videos, games, playable audio tracks, or whatever else.<br><a href = "#">back to top</a><p>
             <p>
-                <img src="./images/html5.svg" alt="HTML5 logo" height="100">
-                <img src="./images/css3.svg" alt="CSS3 logo" width="60">
-                <img src="./images/js.jpg" alt="Java Script logo" height="100">
-                <a href="https://duckduckgo.com/" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.kUCNAQ1hi5MQ1xMDuMisHgHaHa%26pid%3DApi&f=1" alt="Duck Duck Go logo" height="100"></a>
-                
+                <h3 id="head-section">&lt;head&gt; - And shoulders. And title.</h3>
+                <span style="color:blue">&lt;title&gt;</span> - String that creates bookmark in human head.<br>
+                <span style="color:blue">&lt;meta charset="utf-8"&gt;</span> - I can display all sorts of cool $h|T 😊<br>
+                <span style="color:blue">&lt;meta name="author" content="Vododovoodvod"&gt;</span> - So, Vododovoodvod guy did this?<br>
+                <span style="color:blue">&lt;meta name="description" content="My frontend cheat sheet"&gt;</span> - I really don't have better idea<br>
+                <span style="color:blue">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span> - And this page is mobile friendly :D<br>
+                <a href = "#">back to top</a>
             </p>
-            <br><a href = "#">back to top</a> 
+            <p>
+                <h3 id="body-section">&lt;body&gt; - Well, all other stuff goes to me, therefore the belly.</h3>
+                <span style="color:blue">&lt;p&gt;</span> and <span style="color:blue">&lt;/p&gt;</span> - I'm the main guy, the paragraph.<br>
+                <span style="color:blue">&lt;div&gt;</span> - I group content and go to new line!<br>
+                <span style="color:blue">&lt;span&gt;</span> - I group content and don't care about stupid new line!<br>
+                <span style="color:blue">&lt;h1&gt;</span> and <span style="color:blue">&lt;/h1&gt;</span> - I am the greatest of headlines! After me you also have h2, h3, but those guys are bellow my grace.<br>
+                <span style="color:blue">&lt;h2&gt;</span> and <span style="color:blue">&lt;/h2&gt;</span> - You get the point.<br>
+                <span style="color:blue">&lt;br&gt;</span> - I go to new line. Me and <span style="color:blue">&lt;div&gt;</span> are buddys.
+            </p>
+            <p>
+                Aaaaand, if you'd like to display some characters used in HTML code, you can do it with entities:<br>
+                <span style="color:blue">&#38lt&#59</span> - less then<br>
+                <span style="color:blue">&#38gt&#59</span> - greather then<br>
+                How I displayed entities? Check my HTML!<br><a href = "#">back to top</a> 
+            </p>
+            <p>
+                <h3 id="sem-el">Semantics elements</h3>
+                It's not important how I look like, CSS takes care about that. Semantics are all that matters in HTML<br>
+                <strong>&lt;strong&gt; - pointed out, important</strong><br>
+                <em>&lt;em&gt; - pointed out, not really important, good to know</em><br>
+                <small>&lt;small&gt; - not important, nice to have</small>
+                <br><a href = "#">back to top</a> 
+            </p>
+            <p>
+                <h3 id="list-el">Lists</h3>
+                <p>Lists can format list of item in one of 3 ways:</p>
+                Unordered List<br>
+                &lt;ul&gt;<br>&lt;li&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;/li&gt;<br> &lt;/ul&gt;
+                <ul>
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ul>
+                Ordered List<br>
+                &lt;ol&gt;<br>&lt;li&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;/li&gt;<br> &lt;/ol&gt;
+                <ol>
+                    <li>abc</li>
+                    <li>abc</li>
+                    <li>abc</li>
+                </ol>
+                Description List<br>
+                &lt;dl&gt;<br>&lt;dt&gt;&lt;/dt&gt;<br>&lt;dd&gt;&lt;/dd&gt;<br> &lt;/dl&gt;
+                <dl>
+                    <dt>Something</dt>
+                    <dd>Definition of something</dd>
+                    <dt>Something else</dt>
+                    <dd>Definition of something else</dd>  
+                </dl>
+                <br><a href = "#">back to top</a> 
+            </p>
+            <p>
+                <h3 id="list-task-el">Lists task</h3>
+                <ul>
+                    <li>Current HTML version is HTML5</li>
+                    <li>HTML is designed by the British scientist Sir Tim Berners-Lee</li>
+                </ul>
+                <ol>
+                    <li>head</li>
+                    <li>body</li>
+                </ol>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>hypertext markup language</dd>
+                    <dt>Metadata</dt>
+                    <dd>data about data</dd>
+                </dl>
+                <br><a href = "#">back to top</a> 
+            </p>
+            <!--04.11.2021.-->
+            <p>
+                <h3 id="can-el">Canvas</h3>
+                Canvas for drawing via JavaScript.
+                You have greather control over content than SVG.<br><a href = "#">back to top</a> 
+                <h3 id="zadatak-el">Task pictures + SVG</h3>
+                <p>Displays images!<br>
+                <pre><code class="language-html">&lt;img src="./images/moja-animacija.gif" alt="Pisanje koda" height="100"&gt;</code></pre><br>
+                </p> 
+                <img src="./images/moja-animacija.gif" alt="Pisanje koda" height="100">
+                <h3 id="svg-el">SVG</h3>
+                <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="50%" height="50%" fill="red"></rect>
+                </svg>
+                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="90" y="110" width="20" height="90" fill="brown"></rect>
+                    <circle cx="100" cy="100" r="50" fill="green"></circle>
+                    <circle cx="85" cy="85" r="10" fill="red"></circle>
+                    <circle cx="115" cy="100" r="10" fill="red"></circle>
+                    <circle cx="80" cy="120" r="10" fill="red"></circle>            
+                </svg>
+                <p>
+                    <img src="./images/html5.svg" alt="HTML5 logo" height="100">
+                    <img src="./images/css3.svg" alt="CSS3 logo" width="60">
+                    <img src="./images/js.jpg" alt="Java Script logo" height="100">
+                    <a href="https://duckduckgo.com/" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.kUCNAQ1hi5MQ1xMDuMisHgHaHa%26pid%3DApi&f=1" alt="Duck Duck Go logo" height="100"></a>
+                    
+                </p>
+                <br><a href = "#">back to top</a> 
+            </p>
+            <p>
+                <h3 id="audio-el">Audio</h3>
+                <p>Embeds audio multimedia.</p>
+                <pre><code class="language-html">&lt;audio controls&gt;<br>&lt;source src="./music.wav"&gt;<br>&lt;/audio&gt;</code></pre><br>
+                <audio controls>
+                    <source src="./music.wav">
+                    <p>Your browser does not support this element.</p> <!--Poruka ukoliko browser ne učita-->
+                </audio>
+                <br><a href = "#">back to top</a> 
+                <h3 id="video-section">Video</h3>
+                <p>Embeds video multimedia.</p>
+                <pre><code class="language-html">&lt;video width = "450" controls&gt;<br>&lt;source src="./mountains.webm"&gt;<br>&lt;/video&gt;</code></pre><br>
+                <video width = "450" controls>
+                    <source src="./mountains.webm">
+                </video>
+                <br><a href = "#">back to top</a> 
+                <h3 id="link-el">Links</h3>
+                <p>Links are connection to external or internal document or resource.</p>
+                &lt;a href="https://vododovoodvod.github.io/tecaj-frontend-cheat-sheet/" target="_blank"&gt;Moj page&lt;/a&gt;<br>
+                <a href="https://vododovoodvod.github.io/tecaj-frontend-cheat-sheet/" target="_blank">Moj page</a><br><a href="#">Back to top</a>
+            </p>
+            <h3 id="table-el">Tables</h3>
+            <p>
+                Used to be used for page layout, not really responsive or mobile friendly.<br>
+                <table border="1"> <!--border is no longer used in practise-->
+                    <thead>
+                        <tr> <!--table row-->
+                            <td> <!--table data-->
+                                Product
+                            </td>
+                            <td>
+                                Quantity
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Tea
+                            </td>
+                            <td>
+                                2
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Honey
+                            </td>
+                            <td>
+                                1
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><a href="#">Back to top</a>
+            </p>
+            <h3 id="table-task">Table task</h3>
+            <p>
+                <table border="1">
+                    <caption>Vododovoodvod school of life</caption>
+                    <thead>
+                        <tr>
+                            <td>
+                                no
+                            </td>
+                            <td>
+                                Mon
+                            </td>
+                            <td>
+                                Tue
+                            </td>
+                            <td>
+                                Wed
+                            </td>
+                            <td>
+                                Thu
+                            </td>
+                            <td>
+                                Fri
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td rowspan="2">
+                                Sleep
+                            </td>
+                            <td>
+                                Good time
+                            </td>
+                            <td rowspan="3">
+                                Staring at sky
+                            </td>
+                            <td>
+                                Chill
+                            </td>
+                            <td rowspan="2">
+                                Steam
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Sleep
+                            </td>
+                            <td>
+                                Reading
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Good time
+                            </td>
+                            <td rowspan="2">
+                                Good time
+                            </td>
+                            <td rowspan="3">
+                                Good time
+                            </td>
+                            <td>
+                                Chill
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4
+                            </td>
+                            <td rowspan="2">
+                                Staring at sky
+                            </td>
+                            <td>
+                                Reading
+                            </td>
+                            <td>
+                                Good time
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                Steam
+                            </td>
+                            <td>
+                                Chill
+                            </td>
+                            <td>
+                                Steam
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                6
+                            </td>
+                            <td colspan="5">
+                                Sleep
+                            </td>
+                        </tr>
+                    </tbody>
+                </table><br><a href="#">Back to top</a>
+            </p>
+            <h3 id="table-homework">Table homework</h3>
+            <p>
+                <table border="1">
+                    <caption>Table homework merged collumns</caption>
+                    <tr>
+                        <td colspan = "12">level 1</td>
+                    </tr>
+                    <tr>
+                        <td colspan = "6">level 2</td>
+                        <td colspan = "6">level 2</td>
+                    </tr>
+                    <tr>
+                        <td colspan = "4">level 3</td>
+                        <td colspan = "4">level 3</td>
+                        <td colspan = "4">level 3</td>
+                    </tr>
+                    <tr>
+                        <td colspan = "3">level 4</td>
+                        <td colspan = "3">level 4</td>
+                        <td colspan = "3">level 4</td>
+                        <td colspan = "3">level 4</td>
+                    </tr>
+                </table>
+                <br>
+                <table border="1">
+                    <caption>Table homework merged rows</caption>
+                    <tr>
+                        <td rowspan="12">level 1</td>
+                        <td rowspan="6">level 2</td>
+                        <td rowspan="4">level 3</td>
+                        <td rowspan="3">level <br>4</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">level <br>4</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">level 3</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td rowspan="6">level 2</td>
+                        <td rowspan="3">level <br>4</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">level 3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">level <br>4</td>
+                    </tr>
+                    <tr>
+                    </tr>
+                    <tr>
+                    </tr>
+                </table>
+                <br><a href="#">Back to top</a>
+            </p>
+        <p>
+            <h3 id="table-ex">Table exercise</h3>
+            <p>
+            <a href="./table.html">Link to exercise</a>
+            <br><a href = "#">back to top</a>
         </p>
         <p>
-            <h3 id="audio-el">Audio</h3>
-            <p>Embeds audio multimedia.</p>
-            &lt;audio controls&gt;<br>&lt;source src="./music.wav"&gt;<br>&lt;/audio&gt;<br>
-            <audio controls>
-                <source src="./music.wav">
-                <p>Your browser does not support this element.</p> <!--Poruka ukoliko browser ne učita-->
-            </audio>
-            <br><a href = "#">back to top</a> 
-            <h3 id="video-section">Video</h3>
-            <p>Embeds video multimedia.</p>
-            &lt;video width = "450" controls&gt;<br>&lt;source src="./mountains.webm"&gt;<br>&lt;/video&gt;<br>
-            <video width = "450" controls>
-                <source src="./mountains.webm">
-            </video>
-            <br><a href = "#">back to top</a> 
-            <h3 id="link-el">Links</h3>
-            <p>Links are connection to external or internal document or resource.</p>
-            &lt;a href="https://vododovoodvod.github.io/tecaj-frontend-cheat-sheet/" target="_blank"&gt;Moj page&lt;/a&gt;<br>
-            <a href="https://vododovoodvod.github.io/tecaj-frontend-cheat-sheet/" target="_blank">Moj page</a><br><a href="#">Back to top</a>
+            <h3 id="forms">Forms</h3>
+            <h4>Search</h4>
+            <form action="https://duckduckgo.com/?q" method="get" target="_blank">
+                <label for="q">Search DuckDuckGo</label>
+                <input id="q" type="text" name="q">
+                <button>Go!</button>
+            </form>
+            <form action="https://www.ecosia.org/search?q" method="get" target="_blank">
+                <label for="q2">Search Ecosia</label>
+                <input id="q2" type="text" name="q">
+                <button>Go!</button>
+            </form>
+            <form action="https://www.google.com/search?q" method="get" target="_blank">
+                <label for="q3">Search Google</label>
+                <input id="q3" type="text" name="q">
+                <button>Go!</button>
+            </form>
+            Zadaća: isprobati razne inpute, isprobati atribute
+            <br><a href = "#">back to top</a>
         </p>
-        <h3 id="table-el">Tables</h3>
         <p>
-            Used to be used for page layout, not really responsive or mobile friendly.<br>
-            <table border="1"> <!--border is no longer used in practise-->
-                <thead>
-                    <tr> <!--table row-->
-                        <td> <!--table data-->
-                            Product
-                        </td>
-                        <td>
-                            Quantity
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            Tea
-                        </td>
-                        <td>
-                            2
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Honey
-                        </td>
-                        <td>
-                            1
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <br><a href="#">Back to top</a>
+            <h3 id="form-p">Form practice</h3>
+            <form>
+                <label for="fname">First name:</label>
+                <input id="fname" type="text"><br>
+                <label for="lname">Last name:</label>
+                <input id="lname" type="text"><br>
+                <label>Sex:</label>
+                <input type="radio" name="sex" value="male">Male
+                <input type="radio" name="sex" value="female">Female
+                <input type="radio" name="sex" value="other">Other<br>
+                <label>Hobbies:</label>
+                <input type="radio" name="sports" value="sports">Sports
+                <input type="radio" name="art" value="art">Art
+                <input type="radio" name="movies" value="movies">Movies<br>
+                <label>Hair color:</label>
+                <input type="color" name="hair-color" value="hair-color">
+            </form>
+            <br><a href = "#">back to top</a>
         </p>
-        <h3 id="table-task">Table task</h3>
         <p>
-            <table border="1">
-                <caption>Vododovoodvod school of life</caption>
-                <thead>
-                    <tr>
-                        <td>
-                            no
-                        </td>
-                        <td>
-                            Mon
-                        </td>
-                        <td>
-                            Tue
-                        </td>
-                        <td>
-                            Wed
-                        </td>
-                        <td>
-                            Thu
-                        </td>
-                        <td>
-                            Fri
-                        </td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            1
-                        </td>
-                        <td rowspan="2">
-                            Sleep
-                        </td>
-                        <td>
-                            Good time
-                        </td>
-                        <td rowspan="3">
-                            Staring at sky
-                        </td>
-                        <td>
-                            Chill
-                        </td>
-                        <td rowspan="2">
-                            Steam
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            Sleep
-                        </td>
-                        <td>
-                            Reading
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            3
-                        </td>
-                        <td>
-                            Good time
-                        </td>
-                        <td rowspan="2">
-                            Good time
-                        </td>
-                        <td rowspan="3">
-                            Good time
-                        </td>
-                        <td>
-                            Chill
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            4
-                        </td>
-                        <td rowspan="2">
-                            Staring at sky
-                        </td>
-                        <td>
-                            Reading
-                        </td>
-                        <td>
-                            Good time
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            5
-                        </td>
-                        <td>
-                            Steam
-                        </td>
-                        <td>
-                            Chill
-                        </td>
-                        <td>
-                            Steam
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            6
-                        </td>
-                        <td colspan="5">
-                            Sleep
-                        </td>
-                    </tr>
-                </tbody>
-            </table><br><a href="#">Back to top</a>
+            <h3 id="login-f">Login form</h3>
+            <form action=""> <!--novalidate autocomplete="off"-->
+                <input type="email" name="email" placeholder="email" required><br>
+                <input type="password" name="password" placeholder="password" minlength="8" required><br>
+                <button type="submit">Sign in</button>
+            </form>
+            <br><a href = "#">back to top</a>
         </p>
-        <h3 id="table-homework">Table homework</h3>
         <p>
-            <table border="1">
-                <caption>Table homework merged collumns</caption>
-                <tr>
-                    <td colspan = "12">level 1</td>
-                </tr>
-                <tr>
-                    <td colspan = "6">level 2</td>
-                    <td colspan = "6">level 2</td>
-                </tr>
-                <tr>
-                    <td colspan = "4">level 3</td>
-                    <td colspan = "4">level 3</td>
-                    <td colspan = "4">level 3</td>
-                </tr>
-                <tr>
-                    <td colspan = "3">level 4</td>
-                    <td colspan = "3">level 4</td>
-                    <td colspan = "3">level 4</td>
-                    <td colspan = "3">level 4</td>
-                </tr>
-            </table>
-            <br>
-            <table border="1">
-                <caption>Table homework merged rows</caption>
-                <tr>
-                    <td rowspan="12">level 1</td>
-                    <td rowspan="6">level 2</td>
-                    <td rowspan="4">level 3</td>
-                    <td rowspan="3">level <br>4</td>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                    <td rowspan="3">level <br>4</td>
-                </tr>
-                <tr>
-                    <td rowspan="4">level 3</td>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                    <td rowspan="6">level 2</td>
-                    <td rowspan="3">level <br>4</td>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                    <td rowspan="4">level 3</td>
-                </tr>
-                <tr>
-                    <td rowspan="3">level <br>4</td>
-                </tr>
-                <tr>
-                </tr>
-                <tr>
-                </tr>
-            </table>
-            <br><a href="#">Back to top</a>
+            <h3 id="age-f">Age gate form</h3>
+            <form action="">
+                <select name ="day" id="day">
+                    <option value="" disabled selected>Day</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="month" id="month">
+                    <option value="" disabled selected>Month</option> <!--default opcija, ne nosi vrijednost, placeholder-->
+                    <option value="1">January</option>
+                    <option value="2">Februray</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="" disabled selected>Year</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                </select>
+                <button type="submit">Let me in!</button>
+            </form>
+            <br><a href = "#">back to top</a>
         </p>
-    <p>
-        <h3 id="table-ex">Table exercise</h3>
         <p>
-        <a href="./table.html">Link to exercise</a>
-        <br><a href = "#">back to top</a>
-    </p>
-    <p>
-        <h3 id="forms">Forms</h3>
-        <h4>Search</h4>
-        <form action="https://duckduckgo.com/?q" method="get" target="_blank">
-            <label for="q">Search DuckDuckGo</label>
-            <input id="q" type="text" name="q">
-            <button>Go!</button>
-        </form>
-        <form action="https://www.ecosia.org/search?q" method="get" target="_blank">
-            <label for="q2">Search Ecosia</label>
-            <input id="q2" type="text" name="q">
-            <button>Go!</button>
-        </form>
-        <form action="https://www.google.com/search?q" method="get" target="_blank">
-            <label for="q3">Search Google</label>
-            <input id="q3" type="text" name="q">
-            <button>Go!</button>
-        </form>
-        Zadaća: isprobati razne inpute, isprobati atribute
-        <br><a href = "#">back to top</a>
-    </p>
-    <p>
-        <h3 id="form-p">Form practice</h3>
-        <form>
-            <label for="fname">First name:</label>
-            <input id="fname" type="text"><br>
-            <label for="lname">Last name:</label>
-            <input id="lname" type="text"><br>
-            <label>Sex:</label>
-            <input type="radio" name="sex" value="male">Male
-            <input type="radio" name="sex" value="female">Female
-            <input type="radio" name="sex" value="other">Other<br>
-            <label>Hobbies:</label>
-            <input type="radio" name="sports" value="sports">Sports
-            <input type="radio" name="art" value="art">Art
-            <input type="radio" name="movies" value="movies">Movies<br>
-            <label>Hair color:</label>
-            <input type="color" name="hair-color" value="hair-color">
-        </form>
-        <br><a href = "#">back to top</a>
-    </p>
-    <p>
-        <h3 id="login-f">Login form</h3>
-        <form action=""> <!--novalidate autocomplete="off"-->
-            <input type="email" name="email" placeholder="email" required><br>
-            <input type="password" name="password" placeholder="password" minlength="8" required><br>
-            <button type="submit">Sign in</button>
-        </form>
-        <br><a href = "#">back to top</a>
-    </p>
-    <p>
-        <h3 id="age-f">Age gate form</h3>
+            <h3 id="sur-f">Survey form</h3>
+            <form action="">
+                <p>Dobro se snalazim u HTML. (1 - U potpunosti se ne slažem, 5 - u potpunosti se slažem)</p>
+                <label><input type="radio" name="answer" value="1"> 1</label>
+                <label><input type="radio" name="answer" value="2"> 2</label>
+                <label><input type="radio" name="answer" value="3" checked> 3</label>
+                <label><input type="radio" name="answer" value="4"> 4</label>
+                <label><input type="radio" name="answer" value="5"> 5</label>
+            </form>
+            <br><a href = "#">back to top</a>
+        </p>
+        <p>
+            <h3 id="new-f">Newsletter form</h3>
+            <h4>Pick your newsletter topics</h4>
+            <form action="">
+                <label>Email: <input type="email" name="email" required></label><br>
+                <label><input type="checkbox" name="newsletter-topic" value="hardware">Hardware</label><br>
+                <label><input type="checkbox" name="newsletter-topic" value="software">Software</label><br>
+                <label><input type="checkbox" name="newsletter-topic" value="gaming">Gaming</label><br>
+                <label><input type="checkbox" name="newsletter-topic" value="esports">E-Sports</label><br>
+                <button type="submit">Sign me up!</button>
+            </form>
+            <br><a href = "#">back to top</a>
+        </p>
+        <!--FIELDSET - domaća zadaća - newsletter form u fieldset-->
+        <h3 id="food-o">Food order form</h3>
         <form action="">
-            <select name ="day" id="day">
-                <option value="" disabled selected>Day</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
-            </select>
-            <select name="month" id="month">
-                <option value="" disabled selected>Month</option> <!--default opcija, ne nosi vrijednost, placeholder-->
-                <option value="1">January</option>
-                <option value="2">Februray</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-            <select name="year" id="year">
-                <option value="" disabled selected>Year</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-                <option value="2014">2014</option>
-                <option value="2013">2013</option>
-                <option value="2012">2012</option>
-                <option value="2011">2011</option>
-            </select>
-            <button type="submit">Let me in!</button>
+            <label>Ime i prezime: <input type="text" id="full_name" name="full_name" placeholder="Jela Gladnić" required></label><br>
+            <label>Broj telefona: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="09?-123-1234" required></label><br>
+            <label>Adresa kupca: <input type="text" id="address" name="address" placeholder="Ulica Front Enda 404" required></label><br>
+            <label>Vrijeme dostave: <input type="time" id="delivery_time" name="delivery_time" required></label><br>    
+            <label>Jelo: <input list="food-recommendation" type="text"></label><br>
+            <datalist id="food-recommendation">
+                <option value="Hamburger">Hamburger</option>
+                <option value="Wrap">Wrap</option>
+                <option value="Ćevapi">Ćevapi</option>
+                <option value="Pizza">Pizza</option>
+                <option value="Zagrebački odrezak">Zagrebački odrezak</option>
+                <option value="Palenta">Palenta</option>
+                <option value="Još 100 stvari">Još 100 stvari</option>
+            </datalist>
+            <label>Izbor priloga: </label>
+            <label><input type="checkbox" name="order_extras" value="kecap"> Kečap</label>
+            <label><input type="checkbox" name="order_extras" value="majoneza"> Majoneza</label>
+            <label><input type="checkbox" name="order_extras" value="tartar"> Tartar</label>
+            <label><input type="checkbox" name="order_extras" value="kajmak"> Kajmak</label>
+            <label><input type="checkbox" name="order_extras" value="ajvar"> Ajvar</label><br>
+            <label>Izbor bezkontaktnog oblika dostave: </label>
+            <label><input type="radio" name="contactless_delivery" value="true" required> DA</label>
+            <label><input type="radio" name="contactless_delivery" value="false" required> NE</label><br>
+            <label>Komentar:</label><br>
+            <textarea id="comment" name="comment" maxlength="250" rows="5" cols="50" placeholder="250 znakova max"></textarea><br>
+            <button type="submit">Submit order</button>
         </form>
         <br><a href = "#">back to top</a>
-    </p>
-    <p>
-        <h3 id="sur-f">Survey form</h3>
-        <form action="">
-            <p>Dobro se snalazim u HTML. (1 - U potpunosti se ne slažem, 5 - u potpunosti se slažem)</p>
-            <label><input type="radio" name="answer" value="1"> 1</label>
-            <label><input type="radio" name="answer" value="2"> 2</label>
-            <label><input type="radio" name="answer" value="3" checked> 3</label>
-            <label><input type="radio" name="answer" value="4"> 4</label>
-            <label><input type="radio" name="answer" value="5"> 5</label>
-        </form>
-        <br><a href = "#">back to top</a>
-    </p>
-    <p>
-        <h3 id="new-f">Newsletter form</h3>
-        <h4>Pick your newsletter topics</h4>
-        <form action="">
-            <label>Email: <input type="email" name="email" required></label><br>
-            <label><input type="checkbox" name="newsletter-topic" value="hardware">Hardware</label><br>
-            <label><input type="checkbox" name="newsletter-topic" value="software">Software</label><br>
-            <label><input type="checkbox" name="newsletter-topic" value="gaming">Gaming</label><br>
-            <label><input type="checkbox" name="newsletter-topic" value="esports">E-Sports</label><br>
-            <button type="submit">Sign me up!</button>
-        </form>
-        <br><a href = "#">back to top</a>
-    </p>
-    <!--FIELDSET - domaća zadaća - newsletter form u fieldset-->
-    <h3 id="food-o">Food order form</h3>
-    <form action="">
-        <label>Ime i prezime: <input type="text" id="full_name" name="full_name" placeholder="Jela Gladnić" required></label><br>
-        <label>Broj telefona: <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="09?-123-1234" required></label><br>
-        <label>Adresa kupca: <input type="text" id="address" name="address" placeholder="Ulica Front Enda 404" required></label><br>
-        <label>Vrijeme dostave: <input type="time" id="delivery_time" name="delivery_time" required></label><br>    
-        <label>Jelo: <input list="food-recommendation" type="text"></label><br>
-        <datalist id="food-recommendation">
-            <option value="Hamburger">Hamburger</option>
-            <option value="Wrap">Wrap</option>
-            <option value="Ćevapi">Ćevapi</option>
-            <option value="Pizza">Pizza</option>
-            <option value="Zagrebački odrezak">Zagrebački odrezak</option>
-            <option value="Palenta">Palenta</option>
-            <option value="Još 100 stvari">Još 100 stvari</option>
-        </datalist>
-        <label>Izbor priloga: </label>
-        <label><input type="checkbox" name="order_extras" value="kecap"> Kečap</label>
-        <label><input type="checkbox" name="order_extras" value="majoneza"> Majoneza</label>
-        <label><input type="checkbox" name="order_extras" value="tartar"> Tartar</label>
-        <label><input type="checkbox" name="order_extras" value="kajmak"> Kajmak</label>
-        <label><input type="checkbox" name="order_extras" value="ajvar"> Ajvar</label><br>
-        <label>Izbor bezkontaktnog oblika dostave: </label>
-        <label><input type="radio" name="contactless_delivery" value="true" required> DA</label>
-        <label><input type="radio" name="contactless_delivery" value="false" required> NE</label><br>
-        <label>Komentar:</label><br>
-        <textarea id="comment" name="comment" maxlength="250" rows="5" cols="50" placeholder="250 znakova max"></textarea><br>
-        <button type="submit">Submit order</button>
-    </form>
-    <br><a href = "#">back to top</a>
+        <script src="prism.js"></script>
+        </main>
     </body>
+    <!--domaća zadaća selektori css kombinatori-->
 </html>
